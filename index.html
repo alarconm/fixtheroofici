@@ -112,6 +112,17 @@
         .media-contacts { display: flex; flex-wrap: wrap; gap: 8px; }
         .media-link { display: inline-block; padding: 8px 14px; background: var(--bg-alt); border: 1px solid var(--border); color: var(--text); text-decoration: none; font-family: var(--font-mono); font-size: 0.8rem; }
         .media-link:hover { border-color: var(--accent); color: var(--accent); }
+        .action-subsection { margin: 32px 0; padding: 24px; background: var(--surface); border: 1px solid var(--border); }
+        .action-subsection h3 { margin-top: 0; margin-bottom: 16px; }
+        .action-subsection h4 { font-size: 0.9rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin: 24px 0 12px 0; }
+        .action-subsection h4:first-of-type { margin-top: 16px; }
+        .action-subsection.highlight-box { background: var(--accent-bg); border-color: var(--accent-border); }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+        .contact-card { display: flex; flex-direction: column; gap: 4px; padding: 16px; background: var(--bg-alt); border: 1px solid var(--border); text-decoration: none; color: var(--text); transition: all 0.2s; }
+        .contact-card:hover { border-color: var(--accent); background: var(--surface); }
+        .contact-card strong { color: var(--text); font-size: 0.95rem; }
+        .contact-card span { font-size: 0.8rem; color: var(--text-secondary); font-family: var(--font-mono); }
+        .contact-card .tag { display: inline-block; background: var(--accent-bg); color: var(--accent); padding: 2px 8px; font-size: 0.7rem; margin-top: 4px; }
         @media print { .coalition-box, .tipline-box, .flyer-section, nav, .theme-toggle, footer, #evidence, #violations, #demands, #contact, #action { display: none; } header { padding: 20px 0; } .print-flyer { display: block !important; } }
         .print-flyer { display: none; page-break-after: always; }
         footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
@@ -388,47 +399,169 @@
             
             <section id="action">
                 <h2>Take Action</h2>
-                <p>Want to help? Here's how you can make noise and apply pressure.</p>
+                <p>Want to help? Every complaint, every share, every email makes ignoring this harder. Here's how to apply pressure from every angle.</p>
 
-                <div class="action-grid">
-                    <div class="action-card">
-                        <h3>Share on Social Media</h3>
-                        <p>Spread the word. The more visibility, the harder we are to ignore.</p>
-                        <div class="share-buttons">
-                            <a href="https://twitter.com/intent/tweet?text=A%20small%20trading%20card%20shop%20reported%20a%20roof%20leak%20BEFORE%20they%20had%20the%20keys.%208%20months%20later%2C%204%20active%20leaks.%20The%20landlord%20said%20%22wait%20until%20spring.%22%20%23FixTheRoofICI%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="share-btn twitter">Share on X/Twitter</a>
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://fixtheroofici.replit.app" target="_blank" class="share-btn facebook">Share on Facebook</a>
-                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://fixtheroofici.replit.app" target="_blank" class="share-btn linkedin">Share on LinkedIn</a>
-                            <a href="https://www.reddit.com/submit?url=https://fixtheroofici.replit.app&title=Small%20business%20documents%208%20months%20of%20landlord%20neglect%20-%20leak%20reported%20before%20they%20had%20keys" target="_blank" class="share-btn reddit">Share on Reddit</a>
-                        </div>
-                    </div>
-
-                    <div class="action-card">
-                        <h3>File a Complaint</h3>
-                        <p>Official complaints create paper trails they can't ignore.</p>
-                        <div class="complaint-links">
-                            <a href="https://www.bbb.org/file-a-complaint" target="_blank" class="action-button secondary">BBB Complaint</a>
-                            <a href="https://www.google.com/search?q=investment+concepts+inc+orange+ca+reviews" target="_blank" class="action-button secondary">Leave a Google Review</a>
-                        </div>
-                    </div>
-
-                    <div class="action-card">
-                        <h3>Contact News Media</h3>
-                        <p>Local news loves small business vs. corporate landlord stories.</p>
-                        <div class="media-contacts">
-                            <a href="mailto:news@koin.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">KOIN 6</a>
-                            <a href="mailto:newstips@kgw.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">KGW</a>
-                            <a href="mailto:tips@katu.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">KATU</a>
-                            <a href="mailto:tips@oregonian.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">Oregonian</a>
-                            <a href="mailto:editor@wweek.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">Willamette Week</a>
-                        </div>
-                    </div>
-
-                    <div class="action-card">
-                        <h3>Email ICI Leadership Directly</h3>
-                        <p>Let them know people are watching.</p>
-                        <a href="mailto:jeffreyf@icicorporate.com,kimw@icicorporate.com,hubertk@icicorporate.com?subject=Regarding%20Oregon%20Center%20Roof%20Issues%20%23FixTheRoofICI&body=I%20am%20writing%20regarding%20the%20ongoing%20roof%20issues%20at%20Oregon%20Center%20in%20Oregon%20City%2C%20OR.%20I%20have%20seen%20the%20documentation%20at%20fixtheroofici.replit.app%20and%20am%20concerned%20about%20how%20your%20tenants%20are%20being%20treated.%0A%0AA%20small%20business%20reported%20roof%20leaks%20before%20they%20even%20had%20the%20keys%20to%20their%20space.%208%20months%20later%2C%20they%20have%204%20active%20leaks%20and%20have%20been%20told%20to%20%22wait%20until%20spring.%22%0A%0APlease%20do%20the%20right%20thing%20and%20fix%20the%20roof." class="action-button">Email All ICI Executives</a>
+                <!-- Quick Share -->
+                <div class="action-subsection">
+                    <h3>Share the Story</h3>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?text=A%20small%20trading%20card%20shop%20reported%20a%20roof%20leak%20BEFORE%20they%20had%20the%20keys.%208%20months%20later%2C%204%20active%20leaks.%20The%20landlord%20said%20%22wait%20until%20spring.%22%20%23FixTheRoofICI%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="share-btn twitter">X/Twitter</a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://fixtheroofici.replit.app" target="_blank" class="share-btn facebook">Facebook</a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://fixtheroofici.replit.app" target="_blank" class="share-btn linkedin">LinkedIn</a>
+                        <a href="https://www.reddit.com/submit?url=https://fixtheroofici.replit.app&title=Small%20business%20documents%208%20months%20of%20landlord%20neglect%20-%20leak%20reported%20before%20they%20had%20keys" target="_blank" class="share-btn reddit">Reddit</a>
                     </div>
                 </div>
+
+                <!-- Contact ICI -->
+                <div class="action-subsection highlight-box">
+                    <h3>Contact ICI Leadership Directly</h3>
+                    <p>Let them know people are watching. One click emails all executives.</p>
+                    <a href="mailto:jeffreyf@icicorporate.com,kimw@icicorporate.com,hubertk@icicorporate.com?subject=Regarding%20Oregon%20Center%20Roof%20Issues%20%23FixTheRoofICI&body=I%20am%20writing%20regarding%20the%20ongoing%20roof%20issues%20at%20Oregon%20Center%20in%20Oregon%20City%2C%20OR.%20I%20have%20seen%20the%20documentation%20at%20fixtheroofici.replit.app%20and%20am%20concerned%20about%20how%20your%20tenants%20are%20being%20treated.%0A%0AA%20small%20business%20reported%20roof%20leaks%20before%20they%20even%20had%20the%20keys%20to%20their%20space.%208%20months%20later%2C%20they%20have%204%20active%20leaks%20and%20have%20been%20told%20to%20%22wait%20until%20spring.%22%0A%0APlease%20do%20the%20right%20thing%20and%20fix%20the%20roof." class="action-button">Email All ICI Executives</a>
+                    <p class="small-text">CEO Jeffrey Frye, COO Kim Watson, Property Manager Hubert Kim + Main Office: (714) 283-5800</p>
+                </div>
+
+                <!-- NEWS MEDIA -->
+                <div class="action-subsection">
+                    <h3>Contact News Media</h3>
+                    <p>Small business vs. out-of-state corporate slumlord is a story that writes itself. One click sends a pre-written tip.</p>
+
+                    <h4>TV Stations (Portland)</h4>
+                    <div class="contact-grid">
+                        <a href="mailto:news@koin.com?subject=Story%20Tip%3A%20Oregon%20City%20Small%20Business%20vs%20Corporate%20Slumlord%20-%208%20Months%20of%20Neglect&body=Hi%20KOIN%20News%20Team%2C%0A%0AI%20wanted%20to%20share%20a%20compelling%20local%20story%3A%20A%20small%20trading%20card%20shop%20in%20Oregon%20City%20(ORB%20Trading%20Cards)%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20FIRST%20leak%20before%20they%20even%20had%20the%20keys%20to%20the%20space.%0A%0AKey%20facts%3A%0A-%20First%20leak%20reported%20April%208%2C%202025%20(before%20taking%20possession)%0A-%20Now%204%20active%20leaks%20during%20peak%20holiday%20season%0A-%20Landlord%20(Investment%20Concepts%20Inc%2C%20Orange%20County%20CA)%20said%20%22wait%20until%20spring%22%0A-%20Adjacent%20tenant%20has%20had%20same%20problem%20for%202%2B%20YEARS%0A-%20All%20inventory%20is%20cardboard%20-%20water%20destroys%20everything%0A%0AThis%20is%20a%20David%20vs%20Goliath%20story%20with%20extensive%20documentation%20(100%2B%20emails%2C%20photos%2C%20video).%0A%0AFull%20documentation%3A%20https%3A%2F%2Ffixtheroofici.replit.app%0A%0AThank%20you%20for%20considering%20this%20story." target="_blank" class="contact-card">
+                            <strong>KOIN 6 (CBS)</strong>
+                            <span>news@koin.com</span>
+                        </a>
+                        <a href="mailto:newstips@kgw.com?subject=Investigative%20Tip%3A%20Oregon%20City%20Small%20Business%20vs%20Corporate%20Slumlord&body=Hi%20KGW%20Investigates%20Team%2C%0A%0AI%20have%20a%20story%20tip%20that%20may%20interest%20your%20investigative%20team%3A%0A%0AA%20small%20trading%20card%20shop%20in%20Oregon%20City%20reported%20a%20roof%20leak%20BEFORE%20they%20even%20had%20the%20keys.%20The%20landlord%20knew%20and%20handed%20them%20the%20keys%20anyway.%208%20months%20later%2C%20they%20have%204%20active%20leaks%20and%20were%20told%20to%20%22wait%20until%20spring.%22%0A%0AThe%20kicker%3A%20Their%20neighbor%20(a%20Thai%20restaurant)%20has%20had%20the%20same%20problem%20for%202%2B%20YEARS.%20Same%20roof%2C%20same%20landlord%2C%20same%20neglect.%0A%0AThe%20landlord%20is%20Investment%20Concepts%20Inc%20-%20a%20%249M%2Fyear%20property%20management%20company%20based%20in%20Orange%20County%2C%20CA%20(1%2C400%20miles%20away).%0A%0AExtensive%20documentation%20available%3A%20100%2B%20emails%2C%20photos%2C%20video%2C%20and%20the%20landlord%27s%20written%20rent%20concession%20acknowledging%20the%20problem.%0A%0AFull%20story%3A%20https%3A%2F%2Ffixtheroofici.replit.app%0A%0AThis%20has%20all%20the%20elements%20of%20a%20great%20investigative%20piece%20-%20small%20business%20owners%20vs%20corporate%20neglect%2C%20extensive%20paper%20trail%2C%20pattern%20of%20behavior." target="_blank" class="contact-card">
+                            <strong>KGW 8 (NBC)</strong>
+                            <span>newstips@kgw.com</span>
+                            <span class="tag">Investigative Team</span>
+                        </a>
+                        <a href="mailto:tips@katu.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=Hi%20KATU%20News%20Team%2C%0A%0AStory%20tip%3A%20A%20small%20trading%20card%20shop%20in%20Oregon%20City%20reported%20a%20roof%20leak%20before%20they%20even%20had%20the%20keys.%208%20months%20later%3A%204%20active%20leaks.%20Landlord%27s%20response%3F%20%22Wait%20until%20spring.%22%0A%0ATheir%20neighbor%20has%20had%20the%20same%20problem%20for%202%2B%20years.%0A%0AFull%20documentation%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>KATU 2 (ABC)</strong>
+                            <span>tips@katu.com</span>
+                        </a>
+                        <a href="mailto:fox12news@kptv.com?subject=Story%20Tip%3A%20Oregon%20City%20Small%20Business%20vs%20Out-of-State%20Slumlord&body=Story%20tip%3A%20Small%20trading%20card%20shop%20in%20Oregon%20City%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20BEFORE%20they%20had%20the%20keys.%20Landlord%20(Investment%20Concepts%20Inc%2C%20based%20in%20Orange%20County%20CA)%20told%20them%20to%20%22wait%20until%20spring.%22%0A%0AFull%20documentation%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>FOX 12 (KPTV)</strong>
+                            <span>fox12news@kptv.com</span>
+                        </a>
+                    </div>
+
+                    <h4>Print / Online News</h4>
+                    <div class="contact-grid">
+                        <a href="mailto:tips@oregonian.com?subject=Story%3A%20Oregon%20City%20Small%20Business%20Documents%208%20Months%20of%20Corporate%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20business%20in%20Oregon%20City%20dealing%20with%20a%20corporate%20slumlord%3A%0A%0AORB%20Trading%20Cards%20reported%20their%20first%20roof%20leak%20on%20April%208%2C%202025%20-%20BEFORE%20they%20even%20had%20the%20keys.%20The%20landlord%20acknowledged%20it%20and%20handed%20them%20the%20keys%20anyway.%0A%0A8%20months%20later%3A%204%20active%20leaks.%20The%20landlord%20(Investment%20Concepts%20Inc%2C%20based%20in%20Orange%20County%2C%20CA)%20told%20them%20to%20%22wait%20until%20spring.%22%0A%0ATheir%20neighbor%20-%20a%20Thai%20restaurant%20-%20has%20had%20the%20same%20problem%20for%20over%202%20years.%0A%0AFull%20documentation%20with%20100%2B%20emails%2C%20photos%2C%20and%20video%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>The Oregonian</strong>
+                            <span>tips@oregonian.com</span>
+                        </a>
+                        <a href="mailto:editor@wweek.com,azusman@wweek.com?subject=Story%20Tip%3A%20Small%20Business%20vs%20Corporate%20Slumlord%20in%20Oregon%20City&body=Hi%20Willamette%20Week%2C%0A%0AI%20have%20a%20story%20that%20might%20interest%20you%3A%0A%0AA%20small%20trading%20card%20shop%20in%20Oregon%20City%20has%20been%20fighting%20their%20out-of-state%20corporate%20landlord%20for%208%20months%20over%20roof%20leaks%20that%20were%20first%20reported%20BEFORE%20they%20even%20had%20the%20keys.%0A%0AThe%20landlord%20-%20Investment%20Concepts%20Inc%20from%20Orange%20County%2C%20CA%20-%20has%20told%20them%20to%20%22wait%20until%20spring%22%20while%20they%20have%204%20active%20leaks%20during%20their%20peak%20retail%20season.%0A%0ATheir%20neighbor%20has%20had%20the%20same%20problem%20for%202%2B%20years.%0A%0AThis%20is%20a%20classic%20David%20vs%20Goliath%20story%20with%20extensive%20documentation.%0A%0AFull%20details%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>Willamette Week</strong>
+                            <span>editor@wweek.com</span>
+                            <span class="tag">Pulitzer-winning investigative</span>
+                        </a>
+                        <a href="mailto:portland@bizjournals.com?subject=Story%3A%20Small%20Business%20vs%20Out-of-State%20Commercial%20Landlord%20-%20Oregon%20City&body=Story%20tip%20for%20Portland%20Business%20Journal%3A%0A%0AA%20small%20retail%20business%20in%20Oregon%20City%20has%20documented%208%2B%20months%20of%20neglect%20from%20their%20commercial%20landlord%20-%20Investment%20Concepts%20Inc%2C%20a%20property%20management%20company%20based%20in%20Orange%20County%2C%20CA.%0A%0AThey%20reported%20roof%20leaks%20before%20they%20even%20took%20possession%20of%20the%20space.%20Now%20they%20have%204%20active%20leaks%20and%20have%20been%20told%20to%20%22wait%20until%20spring.%22%0A%0AThis%20raises%20questions%20about%20how%20out-of-state%20commercial%20landlords%20treat%20Oregon%20small%20businesses.%0A%0AFull%20documentation%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>Portland Business Journal</strong>
+                            <span>portland@bizjournals.com</span>
+                        </a>
+                        <a href="mailto:tips@portlandmercury.com?subject=Story%3A%20Oregon%20City%20Shop%20vs%20Corporate%20Slumlord&body=Small%20trading%20card%20shop%20reported%20roof%20leak%20before%20they%20had%20keys.%208%20months%20later%3A%204%20leaks.%20Landlord%20said%20%22wait%20until%20spring.%22%20Neighbor%20has%20same%20problem%20for%202%2B%20years.%0A%0Ahttps%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>Portland Mercury</strong>
+                            <span>tips@portlandmercury.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GOVERNMENT AGENCIES -->
+                <div class="action-subsection">
+                    <h3>File Official Complaints</h3>
+                    <p>Every complaint creates a paper trail. The more complaints from different sources, the harder this is to ignore.</p>
+
+                    <h4>Local Code Enforcement</h4>
+                    <div class="contact-grid">
+                        <a href="https://www.orcity.org/660/Code-Enforcement" target="_blank" class="contact-card">
+                            <strong>Oregon City Code Enforcement</strong>
+                            <span>503-657-0895</span>
+                            <span>320 Warner Milne Rd, Oregon City</span>
+                        </a>
+                        <a href="https://www.clackamas.us/codeenforcement" target="_blank" class="contact-card">
+                            <strong>Clackamas County Code Enforcement</strong>
+                            <span>503-742-4452</span>
+                            <span>Building code violations</span>
+                        </a>
+                    </div>
+
+                    <h4>State Agencies (Oregon)</h4>
+                    <div class="contact-grid">
+                        <a href="https://justice.oregon.gov/consumercomplaints/OnlineComplaints/OnlineComplaintForm/en" target="_blank" class="contact-card">
+                            <strong>Oregon DOJ Consumer Protection</strong>
+                            <span>File complaint online</span>
+                            <span>1-877-877-9392</span>
+                            <span class="tag">Unfair business practices</span>
+                        </a>
+                        <a href="https://www.oregon.gov/bcd/enforcement/pages/complaint.aspx" target="_blank" class="contact-card">
+                            <strong>Oregon Building Codes Division</strong>
+                            <span>File complaint online</span>
+                            <span>503-378-3278</span>
+                            <span class="tag">Building code violations</span>
+                        </a>
+                    </div>
+
+                    <h4>California Agencies (ICI is based in Orange County, CA)</h4>
+                    <div class="contact-grid">
+                        <a href="https://eocs.dre.ca.gov/" target="_blank" class="contact-card">
+                            <strong>California Dept of Real Estate (DRE)</strong>
+                            <span>File complaint online</span>
+                            <span>1-877-373-4542</span>
+                            <span class="tag">ICI is CA-licensed</span>
+                        </a>
+                    </div>
+
+                    <h4>Industry Organizations</h4>
+                    <div class="contact-grid">
+                        <a href="https://www.bbb.org/file-a-complaint" target="_blank" class="contact-card">
+                            <strong>Better Business Bureau</strong>
+                            <span>File complaint online</span>
+                            <span class="tag">Business: Investment Concepts Inc, Orange CA</span>
+                        </a>
+                        <a href="https://www.irem.org/contact" target="_blank" class="contact-card">
+                            <strong>IREM Ethics Complaint</strong>
+                            <span>ICI claims IREM accreditation</span>
+                            <span>File ethics violation complaint</span>
+                            <span class="tag">Code of Professional Ethics violation</span>
+                        </a>
+                        <a href="https://www.google.com/search?q=investment+concepts+inc+orange+ca+reviews" target="_blank" class="contact-card">
+                            <strong>Google Reviews</strong>
+                            <span>Leave a public review</span>
+                            <span class="tag">Public accountability</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ELECTED OFFICIALS -->
+                <div class="action-subsection">
+                    <h3>Contact Elected Officials</h3>
+                    <p>Local officials care about small businesses in their community being mistreated by out-of-state corporations.</p>
+
+                    <h4>Oregon City</h4>
+                    <div class="contact-grid">
+                        <a href="mailto:dmcgriff@orcity.org?subject=Oregon%20City%20Small%20Business%20Being%20Neglected%20by%20Out-of-State%20Landlord&body=Mayor%20McGriff%2C%0A%0AI%20wanted%20to%20bring%20to%20your%20attention%20a%20situation%20affecting%20a%20small%20business%20in%20Oregon%20City.%0A%0AORB%20Trading%20Cards%20%26%20Collectibles%20at%20Oregon%20Center%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Their%20landlord%20-%20Investment%20Concepts%20Inc%20from%20Orange%20County%2C%20CA%20-%20has%20told%20them%20to%20%22wait%20until%20spring.%22%0A%0ATheir%20neighbor%20has%20had%20the%20same%20problem%20for%202%2B%20years.%0A%0AThis%20is%20an%20out-of-state%20corporation%20neglecting%20Oregon%20City%20businesses%20and%20properties.%0A%0AFull%20documentation%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>Mayor Denyse McGriff</strong>
+                            <span>dmcgriff@orcity.org</span>
+                        </a>
+                        <a href="https://www.orcity.org/933/Mayor-City-Commission" target="_blank" class="contact-card">
+                            <strong>Oregon City Commission</strong>
+                            <span>View all commissioners</span>
+                            <span>503-657-0891</span>
+                        </a>
+                    </div>
+
+                    <h4>Clackamas County</h4>
+                    <div class="contact-grid">
+                        <a href="mailto:bcc@clackamas.us?subject=Out-of-State%20Landlord%20Neglecting%20Oregon%20City%20Businesses&body=Clackamas%20County%20Commissioners%2C%0A%0AI%20wanted%20to%20bring%20to%20your%20attention%20a%20situation%20at%20Oregon%20Center%20in%20Oregon%20City.%0A%0AA%20small%20business%20(ORB%20Trading%20Cards)%20has%20documented%208%2B%20months%20of%20roof%20leak%20issues.%20They%20reported%20the%20first%20leak%20before%20they%20even%20took%20possession.%20The%20landlord%20-%20Investment%20Concepts%20Inc%20from%20Orange%20County%2C%20CA%20-%20told%20them%20to%20%22wait%20until%20spring.%22%0A%0AThe%20adjacent%20tenant%20has%20had%20the%20same%20problem%20for%202%2B%20years.%20This%20appears%20to%20be%20a%20pattern%20of%20neglect%20by%20an%20out-of-state%20property%20owner.%0A%0AFull%20documentation%3A%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="contact-card">
+                            <strong>Board of County Commissioners</strong>
+                            <span>bcc@clackamas.us</span>
+                            <span>503-655-8581</span>
+                        </a>
+                    </div>
+                </div>
+
             </section>
 
             <section id="tenants">
