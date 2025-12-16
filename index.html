@@ -97,7 +97,22 @@
         .tip-method p { margin-bottom: 8px; font-size: 0.9rem; }
         .flyer-section { background: var(--bg-alt); border: 1px dashed var(--border-strong); padding: 24px; margin-top: 24px; text-align: center; }
         .flyer-section h3 { margin-top: 0; }
-        @media print { .coalition-box, .tipline-box, .flyer-section, nav, .theme-toggle, footer, #evidence, #violations, #demands, #contact { display: none; } header { padding: 20px 0; } .print-flyer { display: block !important; } }
+        .action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px; }
+        .action-card { background: var(--surface); border: 1px solid var(--border); padding: 24px; }
+        .action-card h3 { margin-top: 0; margin-bottom: 12px; font-size: 1.1rem; }
+        .action-card p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 16px; }
+        .share-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+        .share-btn { display: inline-block; padding: 10px 16px; font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none; color: white; border-radius: 4px; }
+        .share-btn.twitter { background: #1da1f2; }
+        .share-btn.facebook { background: #4267b2; }
+        .share-btn.linkedin { background: #0077b5; }
+        .share-btn.reddit { background: #ff4500; }
+        .share-btn:hover { opacity: 0.9; }
+        .complaint-links { display: flex; flex-wrap: wrap; gap: 8px; }
+        .media-contacts { display: flex; flex-wrap: wrap; gap: 8px; }
+        .media-link { display: inline-block; padding: 8px 14px; background: var(--bg-alt); border: 1px solid var(--border); color: var(--text); text-decoration: none; font-family: var(--font-mono); font-size: 0.8rem; }
+        .media-link:hover { border-color: var(--accent); color: var(--accent); }
+        @media print { .coalition-box, .tipline-box, .flyer-section, nav, .theme-toggle, footer, #evidence, #violations, #demands, #contact, #action { display: none; } header { padding: 20px 0; } .print-flyer { display: block !important; } }
         .print-flyer { display: none; page-break-after: always; }
         footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
         .disclaimer { max-width: 600px; margin: 16px auto 0; font-size: 0.75rem; line-height: 1.6; }
@@ -123,9 +138,9 @@
                 <li><a href="#story">Our Story</a></li>
                 <li><a href="#gaslighting">The Gaslighting</a></li>
                 <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#action" style="color: var(--accent); font-weight: 600;">Take Action</a></li>
                 <li><a href="#tenants">Join Us</a></li>
                 <li><a href="#tipline">Tip Line</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -371,6 +386,51 @@
                 <p style="margin-top: 24px;"><strong>We're not asking for anything unreasonable. We're asking for what we signed up for: a roof that works.</strong></p>
             </section>
             
+            <section id="action">
+                <h2>Take Action</h2>
+                <p>Want to help? Here's how you can make noise and apply pressure.</p>
+
+                <div class="action-grid">
+                    <div class="action-card">
+                        <h3>Share on Social Media</h3>
+                        <p>Spread the word. The more visibility, the harder we are to ignore.</p>
+                        <div class="share-buttons">
+                            <a href="https://twitter.com/intent/tweet?text=A%20small%20trading%20card%20shop%20reported%20a%20roof%20leak%20BEFORE%20they%20had%20the%20keys.%208%20months%20later%2C%204%20active%20leaks.%20The%20landlord%20said%20%22wait%20until%20spring.%22%20%23FixTheRoofICI%20https%3A%2F%2Ffixtheroofici.replit.app" target="_blank" class="share-btn twitter">Share on X/Twitter</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://fixtheroofici.replit.app" target="_blank" class="share-btn facebook">Share on Facebook</a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://fixtheroofici.replit.app" target="_blank" class="share-btn linkedin">Share on LinkedIn</a>
+                            <a href="https://www.reddit.com/submit?url=https://fixtheroofici.replit.app&title=Small%20business%20documents%208%20months%20of%20landlord%20neglect%20-%20leak%20reported%20before%20they%20had%20keys" target="_blank" class="share-btn reddit">Share on Reddit</a>
+                        </div>
+                    </div>
+
+                    <div class="action-card">
+                        <h3>File a Complaint</h3>
+                        <p>Official complaints create paper trails they can't ignore.</p>
+                        <div class="complaint-links">
+                            <a href="https://www.bbb.org/file-a-complaint" target="_blank" class="action-button secondary">BBB Complaint</a>
+                            <a href="https://www.google.com/search?q=investment+concepts+inc+orange+ca+reviews" target="_blank" class="action-button secondary">Leave a Google Review</a>
+                        </div>
+                    </div>
+
+                    <div class="action-card">
+                        <h3>Contact News Media</h3>
+                        <p>Local news loves small business vs. corporate landlord stories.</p>
+                        <div class="media-contacts">
+                            <a href="mailto:news@koin.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">KOIN 6</a>
+                            <a href="mailto:newstips@kgw.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">KGW</a>
+                            <a href="mailto:tips@katu.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">KATU</a>
+                            <a href="mailto:tips@oregonian.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">Oregonian</a>
+                            <a href="mailto:editor@wweek.com?subject=Story%20Tip%3A%20Small%20Business%20Documents%208%20Months%20of%20Landlord%20Neglect&body=I%20wanted%20to%20share%20a%20story%20about%20a%20small%20trading%20card%20shop%20in%20Oregon%20City%20that%20has%20been%20dealing%20with%20roof%20leaks%20for%208%2B%20months.%20They%20reported%20the%20first%20leak%20before%20they%20even%20had%20the%20keys.%20Full%20documentation%20at%3A%20https%3A%2F%2Ffixtheroofici.replit.app" class="media-link">Willamette Week</a>
+                        </div>
+                    </div>
+
+                    <div class="action-card">
+                        <h3>Email ICI Leadership Directly</h3>
+                        <p>Let them know people are watching.</p>
+                        <a href="mailto:jeffreyf@icicorporate.com,kimw@icicorporate.com,hubertk@icicorporate.com?subject=Regarding%20Oregon%20Center%20Roof%20Issues%20%23FixTheRoofICI&body=I%20am%20writing%20regarding%20the%20ongoing%20roof%20issues%20at%20Oregon%20Center%20in%20Oregon%20City%2C%20OR.%20I%20have%20seen%20the%20documentation%20at%20fixtheroofici.replit.app%20and%20am%20concerned%20about%20how%20your%20tenants%20are%20being%20treated.%0A%0AA%20small%20business%20reported%20roof%20leaks%20before%20they%20even%20had%20the%20keys%20to%20their%20space.%208%20months%20later%2C%20they%20have%204%20active%20leaks%20and%20have%20been%20told%20to%20%22wait%20until%20spring.%22%0A%0APlease%20do%20the%20right%20thing%20and%20fix%20the%20roof." class="action-button">Email All ICI Executives</a>
+                    </div>
+                </div>
+            </section>
+
             <section id="tenants">
                 <h2>Oregon Center Tenants: Join Us</h2>
                 <div class="coalition-box">
