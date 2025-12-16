@@ -13,7 +13,7 @@
 We're a small trading card shop. We reported our first roof leak BEFORE WE EVEN HAD THE KEYS. Eight months later, we have four active leaks. All we're asking for is a roof that doesn't leak. Our out-of-state corporate landlord told us to "wait until spring."
 
 **Full version (news/media):**
-We're Mike, Brandon, and Brandon's spouse—a small team running ORB Trading Cards & Collectibles in Oregon City, Oregon. We sell Magic: The Gathering, Pokémon, sports cards—cardboard products that water destroys instantly.
+We're a small family-run business running ORB Trading Cards & Collectibles in Oregon City, Oregon. We sell Magic: The Gathering, Pokémon, sports cards—cardboard products that water destroys instantly.
 
 We reported our first roof leak on April 8, 2025—**during buildout, before we even had the keys**. The landlord acknowledged it. The roofer was dispatched. It wasn't fixed. They handed us the keys anyway.
 
@@ -22,6 +22,9 @@ Eight months later, we have **four active leaks** during our peak retail season.
 We're not asking for anything extraordinary. We're asking for what our lease promises: a roof that works. That's it.
 
 Our neighbor—a Thai restaurant sharing the same roof—has dealt with this for **over 2 years**. This isn't a one-time problem. This is a pattern of neglect.
+
+**THE BIGGER PICTURE:**
+ICI isn't just managing our building. They manage **29 shopping centers** and **63 apartment buildings** across **California, Nevada, Oregon, and Arizona** — 1.8 million square feet. We're connecting with tenants across their portfolio and hearing the same stories.
 
 Full documentation: https://fixtheroofici.replit.app
 
@@ -38,6 +41,17 @@ Full documentation: https://fixtheroofici.replit.app
 | Neighbor's experience | 2+ YEARS of the same problem |
 | Our ask | A roof that doesn't leak |
 
+## ICI'S PORTFOLIO (Use This Everywhere)
+
+| Fact | Detail |
+|------|--------|
+| Shopping centers | 29 |
+| Apartment buildings | 63 |
+| Total square feet | 1.8 million |
+| States | California, Nevada, Oregon, Arizona |
+
+**This isn't just one leaky roof in Oregon. This is potentially a pattern of corporate neglect across 4 states.**
+
 ---
 
 # DAMNING QUOTES (Use Everywhere)
@@ -48,25 +62,19 @@ Full documentation: https://fixtheroofici.replit.app
 
 **The kicker:** TWO NEW LEAKS appeared the next morning. Those tiles were brand new.
 
-## 2. Condescending
-> "**It helps if you answer the questions.**"
-> — Ray Deal, May 17, 2025
-
-We had answered every question. We had sent photos. We were being dismissed.
-
-## 3. The False Statement
+## 2. The False Statement
 > "[We] offered to install leak diverters... **but they were declined.**"
 > — Hubert Kim (ICI Property Manager), August 8, 2025
 
 **Brandon's response:** "Because they were absolutely not declined by us." We offered to pull security video with audio to prove it.
 
-## 4. Wait Until Spring
+## 3. Wait Until Spring
 > "The roof cannot be repaired until after the rainy season."
 > — ICI Management, December 2025
 
 They had April through October. They didn't fix it. Now it's our problem.
 
-## 5. We Predicted This
+## 4. We Predicted This
 > "I am worried that we are going to get a patch here and there then **when the rainy season hits in the fall we're going to have a continual loop of leaks**..."
 > — Mike Alarcon (ORB), May 16, 2025
 
@@ -314,15 +322,31 @@ Documentation: https://fixtheroofici.replit.app
 
 # SEND TO:
 
+## Oregon News
 | Outlet | Email |
 |--------|-------|
-| KOIN 6 | news@koin.com |
-| KGW | newstips@kgw.com |
-| KATU | tips@katu.com |
+| KGW 8 (NBC) | newstips@kgw.com |
+| KOIN 6 (CBS) | news@koin.com |
+| KATU 2 (ABC) | tips@katu.com |
+| FOX 12 (KPTV) | fox12news@kptv.com |
 | The Oregonian | tips@oregonian.com |
 | Willamette Week | editor@wweek.com |
 | Portland Business Journal | portland@bizjournals.com |
-| Oregon City News | tips@oregoncitynews.com |
+| Portland Mercury | tips@portlandmercury.com |
+
+## California News (ICI's Home Turf)
+| Outlet | Email |
+|--------|-------|
+| OC Register - Investigations | fsuraci@scng.com |
+| OC Register - Newsroom | local@ocregister.com |
+| ABC7 Los Angeles | webops@myabc7.com |
+| LA Times | tips@latimes.com |
+
+## Nevada & Arizona News
+| Outlet | Email |
+|--------|-------|
+| Las Vegas Review-Journal | news@reviewjournal.com |
+| Arizona Republic | tips@arizonarepublic.com |
 
 ---
 
