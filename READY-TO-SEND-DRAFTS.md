@@ -22,6 +22,21 @@ This is potentially a story about **corporate neglect across 4 states** — not 
 
 ---
 
+# KEY FRAMING: THE RENT CONCESSION
+
+**ICI gave us a 50% rent concession in August 2025. Use this EVERYWHERE.**
+
+Why this matters:
+- **It's written proof ICI acknowledges the roof is defective**
+- **A discount is NOT what we asked for** — we asked for a roof that doesn't leak
+- **A discount doesn't protect our inventory** — only a working roof does
+- **4 months later, the roof is STILL not fixed**
+- **Our neighbor with the same problem for 2+ years is NOT getting any concession** — same roof, different treatment
+
+The concession proves they know. The lack of repair proves they don't care.
+
+---
+
 # PART 1: OFFICIAL COMPLAINTS
 
 ---
@@ -66,7 +81,9 @@ KEY FACTS:
 - First leak reported: April 8, 2025 (BEFORE I had keys to the space)
 - Current status: 4 active leaks
 - Duration unresolved: 252+ days
-- Adjacent tenant: Same problem for 2+ YEARS
+- August 2025: ICI gave us 50% rent concession (written acknowledgment of defect)
+- Despite concession, roof STILL not fixed 4 months later
+- Adjacent tenant: Same problem for 2+ YEARS — NOT receiving any concession
 - My business: Trading cards (cardboard products that water destroys)
 - ICI's response: "Wait until spring"
 
@@ -75,7 +92,7 @@ I have extensive documentation available:
 - Photographs of every leak incident
 - Video of active water intrusion
 - Security camera footage
-- ICI's written rent concession letter (acknowledging the problem)
+- ICI's written 50% rent concession (proof they acknowledge the defect but still haven't fixed it)
 - Lease agreement showing roof maintenance is landlord's responsibility (Section 8a)
 - Testimony from adjacent tenant confirming 2+ year pattern
 

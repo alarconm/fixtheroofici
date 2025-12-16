@@ -37,9 +37,11 @@ Full documentation: https://fixtheroofici.replit.app
 | First leak reported | April 8, 2025 — BEFORE we had keys |
 | Current status | 4 active leaks |
 | Duration | 252+ days unresolved |
+| Rent concession | 50% off rent (August 2025) — PROOF they acknowledge the defect |
+| Still not fixed | 4 months after concession, roof still leaking |
+| Neighbor's experience | 2+ YEARS same problem — NO concession for them |
 | Landlord's solution | "Wait until spring" |
-| Neighbor's experience | 2+ YEARS of the same problem |
-| Our ask | A roof that doesn't leak |
+| Our ask | A roof that doesn't leak (NOT a discount) |
 
 ## ICI'S PORTFOLIO (Use This Everywhere)
 
