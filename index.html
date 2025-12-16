@@ -76,6 +76,29 @@
         .contact-box { background: var(--surface); border: 1px solid var(--border); padding: 24px; }
         .contact-box h3 { margin-top: 0; }
         .contact-email { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; font-family: var(--font-mono); font-size: 0.9rem; }
+        .coalition-box, .tipline-box { background: var(--surface); border: 2px solid var(--border-strong); padding: 32px; margin: 24px 0; }
+        .coalition-box h3, .tipline-box h3 { margin-top: 0; color: var(--accent); }
+        .coalition-benefits, .tip-methods { margin: 24px 0; }
+        .coalition-benefits h4, .tip-methods h4 { color: var(--text); margin-bottom: 12px; }
+        .coalition-benefits ul, .tipline-box > ul { margin-left: 20px; margin-bottom: 16px; }
+        .coalition-benefits li, .tipline-box li { margin-bottom: 8px; }
+        .coalition-action { background: var(--accent-bg); border: 1px solid var(--accent-border); padding: 24px; margin-top: 24px; }
+        .coalition-action ul { margin-left: 20px; margin-bottom: 16px; }
+        .action-button { display: inline-block; background: var(--accent); color: white; padding: 14px 28px; text-decoration: none; font-family: var(--font-mono); font-size: 0.9rem; font-weight: 500; border: none; cursor: pointer; margin: 8px 0; }
+        .action-button:hover { opacity: 0.9; }
+        .action-button.secondary { background: var(--surface); color: var(--accent); border: 2px solid var(--accent); }
+        .small-text { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; }
+        .confidential-notice { background: #065f46; border: 2px solid #10b981; padding: 20px; margin: 20px 0; color: #d1fae5; }
+        [data-theme="light"] .confidential-notice { background: #d1fae5; border-color: #10b981; color: #065f46; }
+        .confidential-notice h4 { color: #34d399; margin-bottom: 8px; }
+        [data-theme="light"] .confidential-notice h4 { color: #059669; }
+        .tip-method { background: var(--bg-alt); padding: 16px; margin: 12px 0; border-left: 3px solid var(--border-strong); }
+        .tip-method strong { display: block; margin-bottom: 8px; color: var(--text); }
+        .tip-method p { margin-bottom: 8px; font-size: 0.9rem; }
+        .flyer-section { background: var(--bg-alt); border: 1px dashed var(--border-strong); padding: 24px; margin-top: 24px; text-align: center; }
+        .flyer-section h3 { margin-top: 0; }
+        @media print { .coalition-box, .tipline-box, .flyer-section, nav, .theme-toggle, footer, #evidence, #violations, #demands, #contact { display: none; } header { padding: 20px 0; } .print-flyer { display: block !important; } }
+        .print-flyer { display: none; page-break-after: always; }
         footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
         .disclaimer { max-width: 600px; margin: 16px auto 0; font-size: 0.75rem; line-height: 1.6; }
         .family-story { background: linear-gradient(135deg, var(--surface) 0%, var(--bg-alt) 100%); border: 1px solid var(--border); padding: 32px; margin: 32px 0; border-radius: 8px; }
@@ -98,9 +121,10 @@
             <span class="nav-title">#FixTheRoofICI</span>
             <ul class="nav-links">
                 <li><a href="#story">Our Story</a></li>
-                <li><a href="#ask">Our Ask</a></li>
                 <li><a href="#gaslighting">The Gaslighting</a></li>
                 <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#tenants">Join Us</a></li>
+                <li><a href="#tipline">Tip Line</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -347,11 +371,96 @@
                 <p style="margin-top: 24px;"><strong>We're not asking for anything unreasonable. We're asking for what we signed up for: a roof that works.</strong></p>
             </section>
             
+            <section id="tenants">
+                <h2>Oregon Center Tenants: Join Us</h2>
+                <div class="coalition-box">
+                    <h3>Are You Also Dealing With Leaks?</h3>
+                    <p>We know we're not alone. Our neighbor has had leaks for <strong>2+ years</strong>. If you're a tenant at Oregon Center or any ICI property experiencing similar issues, we want to hear from you.</p>
+                    <p><strong>Together, we're harder to ignore.</strong></p>
+
+                    <div class="coalition-benefits">
+                        <h4>Why Join the Coalition?</h4>
+                        <ul>
+                            <li><strong>Strength in numbers</strong> — One complaint is easy to dismiss. A building full of tenants is not.</li>
+                            <li><strong>Shared documentation</strong> — Your experiences add to the pattern of neglect</li>
+                            <li><strong>Coordinated action</strong> — File complaints together, speak to media together</li>
+                            <li><strong>Legal leverage</strong> — Multiple tenants with the same issue = systemic problem</li>
+                        </ul>
+                    </div>
+
+                    <div class="coalition-action">
+                        <p><strong>Ready to join?</strong> Email us with:</p>
+                        <ul>
+                            <li>Your business name and suite number</li>
+                            <li>How long you've had leak issues</li>
+                            <li>Any documentation you have (photos, emails, etc.)</li>
+                        </ul>
+                        <a href="mailto:mike@orbsportscards.com?subject=Oregon%20Center%20Tenant%20Coalition%20-%20Count%20Me%20In&body=Business%20Name%3A%20%0ASuite%20Number%3A%20%0AHow%20long%20have%20you%20had%20leak%20issues%3F%20%0ABrief%20description%3A%20" class="action-button">Join the Tenant Coalition</a>
+                        <p class="small-text">Your information stays private unless you want to go public.</p>
+                    </div>
+                </div>
+
+                <div class="flyer-section">
+                    <h3>Help Us Reach Every Tenant</h3>
+                    <p>Know other tenants at Oregon Center? Print this flyer and share it.</p>
+                    <button onclick="window.print()" class="action-button secondary">Print Tenant Flyer</button>
+                </div>
+            </section>
+
+            <section id="tipline">
+                <h2>Confidential Tip Line</h2>
+                <div class="tipline-box">
+                    <h3>Do You Have Inside Information?</h3>
+                    <p>Are you an <strong>ICI employee</strong>, <strong>contractor</strong>, <strong>vendor</strong>, or <strong>former employee</strong> who knows something about:</p>
+                    <ul>
+                        <li>The roof issues at Oregon Center</li>
+                        <li>Similar problems at other ICI properties</li>
+                        <li>Internal communications about maintenance issues</li>
+                        <li>A pattern of ignoring tenant complaints</li>
+                        <li>Pressure to cut corners on repairs</li>
+                    </ul>
+
+                    <div class="confidential-notice">
+                        <h4>Your Identity Is Protected</h4>
+                        <p>We will <strong>never</strong> reveal your identity without your explicit permission. Tips can be completely anonymous.</p>
+                    </div>
+
+                    <div class="tip-methods">
+                        <h4>How to Submit a Tip:</h4>
+
+                        <div class="tip-method">
+                            <strong>Anonymous Email:</strong>
+                            <p>Create a new email account (ProtonMail, Gmail, etc.) that isn't connected to your name. Send your tip to:</p>
+                            <a href="mailto:mike@orbsportscards.com?subject=Confidential%20Tip%20-%20FixTheRoofICI" class="contact-email">mike@orbsportscards.com</a>
+                        </div>
+
+                        <div class="tip-method">
+                            <strong>Anonymous Phone:</strong>
+                            <p>Call or text from a number that isn't tied to you:</p>
+                            <span class="contact-email">503-389-5404</span>
+                        </div>
+
+                        <div class="tip-method">
+                            <strong>Physical Mail:</strong>
+                            <p>No return address needed:</p>
+                            <address style="font-style: normal; padding: 12px; background: var(--bg-alt); margin-top: 8px;">
+                                ORB Trading Cards & Collectibles<br>
+                                ATTN: Confidential<br>
+                                Oregon Center, Suite 127<br>
+                                Oregon City, OR 97045
+                            </address>
+                        </div>
+                    </div>
+
+                    <p class="small-text" style="margin-top: 24px;"><strong>Whistleblower Note:</strong> If you're an employee concerned about retaliation, Oregon has whistleblower protection laws. We can connect you with resources.</p>
+                </div>
+            </section>
+
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="contact-box">
-                    <h3>Are You Also Affected?</h3>
-                    <p>If you're at Oregon Center or another ICI property with similar issues, please reach out.</p>
+                    <h3>General Inquiries</h3>
+                    <p>Questions, support, or just want to say you're behind us?</p>
                     <a href="mailto:mike@orbsportscards.com" class="contact-email">mike@orbsportscards.com</a>
                 </div>
                 <div class="contact-box" style="margin-top: 16px;">
@@ -359,9 +468,44 @@
                     <p>Full documentation available. A small business that just wants a dry ceiling vs. a corporate landlord 1,400 miles away.</p>
                     <a href="mailto:mike@orbsportscards.com?subject=Media%20Inquiry%20-%20FixTheRoofICI" class="contact-email">Media Contact</a>
                 </div>
+                <div class="contact-box" style="margin-top: 16px;">
+                    <h3>ICI Corporate Contacts</h3>
+                    <p>Want to contact ICI directly? Here's who to reach:</p>
+                    <table class="parties-table" style="margin-top: 12px;">
+                        <tr><th>Role</th><th>Name</th><th>Contact</th></tr>
+                        <tr><td>CEO/CFO</td><td>Jeffrey Frye</td><td><a href="mailto:jeffreyf@icicorporate.com" class="contact-email">jeffreyf@icicorporate.com</a></td></tr>
+                        <tr><td>COO</td><td>Kim Watson</td><td><a href="mailto:kimw@icicorporate.com" class="contact-email">kimw@icicorporate.com</a></td></tr>
+                        <tr><td>Property Manager</td><td>Hubert Kim</td><td><a href="mailto:hubertk@icicorporate.com" class="contact-email">hubertk@icicorporate.com</a></td></tr>
+                        <tr><td>Main Office</td><td>ICI Corporate</td><td><a href="tel:7142835800" class="contact-email">(714) 283-5800</a></td></tr>
+                    </table>
+                </div>
             </section>
         </div>
     </main>
+    <div class="print-flyer" style="padding: 40px; text-align: center; font-family: Arial, sans-serif;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px; color: #b91c1c;">IS YOUR ROOF LEAKING TOO?</h1>
+        <p style="font-size: 1.3rem; margin-bottom: 30px;">Oregon Center Tenants — You're Not Alone</p>
+
+        <div style="border: 3px solid #b91c1c; padding: 20px; margin: 20px 0; text-align: left;">
+            <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>We've had roof leaks for 8+ months.</strong></p>
+            <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Our neighbor has had them for 2+ YEARS.</strong></p>
+            <p style="font-size: 1.1rem; margin-bottom: 0;"><strong>The landlord told us to "wait until spring."</strong></p>
+        </div>
+
+        <p style="font-size: 1.2rem; margin: 30px 0;"><strong>If you're dealing with the same issues, let's talk.</strong></p>
+        <p style="font-size: 1rem; margin-bottom: 20px;">Together, we're harder to ignore.</p>
+
+        <div style="background: #f5f5f4; padding: 20px; margin: 20px 0;">
+            <p style="font-size: 1.1rem; margin-bottom: 10px;"><strong>Contact:</strong></p>
+            <p style="font-size: 1.2rem; margin-bottom: 5px;">mike@orbsportscards.com</p>
+            <p style="font-size: 1.2rem; margin-bottom: 5px;">503-389-5404</p>
+            <p style="font-size: 1rem; margin-top: 15px;"><strong>Full documentation:</strong> fixtheroofici.replit.app</p>
+        </div>
+
+        <p style="font-size: 1.3rem; margin-top: 30px;"><strong>#FixTheRoofICI</strong></p>
+        <p style="font-size: 0.9rem; margin-top: 20px; color: #666;">From your neighbors at ORB Trading Cards (Suite 127)</p>
+    </div>
+
     <footer>
         <div class="container">
             <p><strong>ORB Trading Cards & Collectibles</strong> — Oregon City, Oregon</p>
