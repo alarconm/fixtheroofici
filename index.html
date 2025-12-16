@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix The Roof, ICI | A Small Business Just Wants a Dry Ceiling</title>
+    <meta name="description" content="We reported the leak BEFORE we had the keys. 8 months later, 4 active leaks. All we want is a roof that doesn't leak. Is that too much to ask?">
+    <meta property="og:title" content="All We Want Is A Roof That Doesn't Leak.">
+    <meta property="og:description" content="We reported the leak BEFORE we had the keys. 8 months later, 4 active leaks. The landlord told us to 'wait until spring.' Full documentation inside.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fixtheroofici.replit.app">
+    <link rel="canonical" href="https://fixtheroofici.replit.app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --font-serif: 'Newsreader', Georgia, serif; --font-mono: 'JetBrains Mono', monospace; }
+        [data-theme="light"] { --bg: #fafaf9; --bg-alt: #f5f5f4; --surface: #ffffff; --border: #e7e5e4; --border-strong: #d6d3d1; --text: #1c1917; --text-secondary: #57534e; --text-muted: #a8a29e; --accent: #b91c1c; --accent-bg: #fef2f2; --accent-border: #fecaca; --quote-bg: #fef2f2; }
+        [data-theme="dark"] { --bg: #0c0a09; --bg-alt: #1c1917; --surface: #1c1917; --border: #292524; --border-strong: #44403c; --text: #fafaf9; --text-secondary: #a8a29e; --text-muted: #78716c; --accent: #ef4444; --accent-bg: #1f1412; --accent-border: #7f1d1d; --quote-bg: #1f1412; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 18px; scroll-behavior: smooth; }
+        body { font-family: var(--font-serif); background: var(--bg); color: var(--text); line-height: 1.7; }
+        .theme-toggle { position: fixed; top: 20px; right: 20px; z-index: 100; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; cursor: pointer; font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary); }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        .container-wide { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+        nav { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 12px 0; z-index: 50; }
+        nav .container-wide { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .nav-title { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+        .nav-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
+        .nav-links a { font-size: 14px; color: var(--text-muted); text-decoration: none; }
+        .nav-links a:hover { color: var(--text); }
+        header { padding: 80px 0 60px; border-bottom: 1px solid var(--border); }
+        .status-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-bg); border: 1px solid var(--accent-border); color: var(--accent); padding: 8px 16px; border-radius: 100px; font-family: var(--font-mono); font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 24px; }
+        .status-badge::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        h1 { font-size: 2.5rem; font-weight: 600; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.02em; }
+        .subtitle { font-size: 1.25rem; color: var(--text-secondary); font-style: italic; margin-bottom: 32px; }
+        .intro-text { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 24px; border-left: 3px solid var(--accent); padding-left: 20px; }
+        .simple-ask { background: var(--surface); border: 2px solid var(--accent); padding: 32px; margin: 32px 0; text-align: center; }
+        .simple-ask h2 { border: none; padding: 0; margin-bottom: 16px; color: var(--accent); }
+        .simple-ask p { margin: 0; font-size: 1.1rem; }
+        .key-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin: 40px 0; }
+        .fact-box { background: var(--surface); border: 1px solid var(--border); padding: 20px; text-align: center; }
+        .fact-number { font-family: var(--font-mono); font-size: 2rem; font-weight: 500; color: var(--accent); display: block; }
+        .fact-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        main { padding: 60px 0; }
+        section { margin-bottom: 80px; }
+        h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+        h3 { font-size: 1.1rem; font-weight: 600; margin: 32px 0 16px; color: var(--text); }
+        p { margin-bottom: 16px; }
+        .damning-quote { background: var(--quote-bg); border-left: 4px solid var(--accent); padding: 24px; margin: 24px 0; font-size: 1.1rem; }
+        .damning-quote blockquote { font-style: italic; margin-bottom: 12px; }
+        .damning-quote .attribution { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); }
+        .damning-quote .context { font-size: 0.9rem; color: var(--text-secondary); margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+        .timeline { position: relative; padding-left: 32px; }
+        .timeline::before { content: ''; position: absolute; left: 7px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+        .timeline-item { position: relative; padding-bottom: 32px; }
+        .timeline-item::before { content: ''; position: absolute; left: -29px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--border-strong); }
+        .timeline-item.major::before { background: var(--accent); border-color: var(--accent); }
+        .timeline-item.gaslight::before { background: #f59e0b; border-color: #f59e0b; }
+        .timeline-item.prekeys::before { background: #3b82f6; border-color: #3b82f6; }
+        .timeline-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; }
+        .timeline-title { font-weight: 600; margin-bottom: 8px; }
+        .timeline-content { color: var(--text-secondary); font-size: 0.95rem; }
+        .timeline-content em { color: var(--accent); font-style: normal; background: var(--accent-bg); padding: 2px 6px; }
+        .parties-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.95rem; }
+        .parties-table th, .parties-table td { padding: 12px 16px; text-align: left; border: 1px solid var(--border); }
+        .parties-table th { background: var(--bg-alt); font-weight: 500; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+        .highlight-row { background: var(--accent-bg); }
+        .lease-excerpt { background: var(--surface); border: 1px solid var(--border); padding: 24px; margin: 24px 0; }
+        .lease-section { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+        .lease-text { font-style: italic; padding: 16px; background: var(--bg-alt); border-left: 3px solid var(--border-strong); margin-bottom: 16px; }
+        .lease-analysis { font-size: 0.95rem; color: var(--text-secondary); }
+        .demands-list { list-style: decimal; padding-left: 24px; }
+        .demands-list li { margin-bottom: 12px; padding-left: 8px; }
+        .contact-box { background: var(--surface); border: 1px solid var(--border); padding: 24px; }
+        .contact-box h3 { margin-top: 0; }
+        .contact-email { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); text-decoration: none; font-family: var(--font-mono); font-size: 0.9rem; }
+        footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
+        .disclaimer { max-width: 600px; margin: 16px auto 0; font-size: 0.75rem; line-height: 1.6; }
+        .family-story { background: linear-gradient(135deg, var(--surface) 0%, var(--bg-alt) 100%); border: 1px solid var(--border); padding: 32px; margin: 32px 0; border-radius: 8px; }
+        .family-story h3 { margin-top: 0; color: var(--accent); }
+        .neighbor-box { background: var(--accent-bg); border: 1px solid var(--accent-border); padding: 24px; margin: 24px 0; }
+        .neighbor-box h4 { color: var(--accent); margin-bottom: 12px; }
+        .neighbor-box ul { margin-left: 20px; margin-bottom: 16px; }
+        .prekeys-callout { background: #1e3a5f; border: 2px solid #3b82f6; padding: 24px; margin: 32px 0; color: #e0f2fe; }
+        [data-theme="light"] .prekeys-callout { background: #eff6ff; border-color: #3b82f6; color: #1e3a8a; }
+        .prekeys-callout h4 { color: #60a5fa; margin-bottom: 12px; }
+        [data-theme="light"] .prekeys-callout h4 { color: #2563eb; }
+        @media (max-width: 600px) { html { font-size: 16px; } h1 { font-size: 1.75rem; } header { padding: 40px 0; } .key-facts { grid-template-columns: repeat(2, 1fr); } }
+        @media print { nav, .theme-toggle { display: none; } body { font-size: 11pt; } }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()"><span class="theme-label">Light</span> Mode</button>
+    <nav>
+        <div class="container-wide">
+            <span class="nav-title">#FixTheRoofICI</span>
+            <ul class="nav-links">
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#ask">Our Ask</a></li>
+                <li><a href="#gaslighting">The Gaslighting</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="status-badge">Unresolved — 8+ Months</div>
+            <h1>All We Want Is A Roof That Doesn't Leak.</h1>
+            <p class="subtitle">We reported the first leak before we even had the keys. Eight months later, we have four. Is that too much to ask?</p>
+            <p class="intro-text">We're a small trading card shop. We sell Magic: The Gathering, Pokémon, sports cards—cardboard products destroyed by water. Our landlord rented us a space with a leaking roof, knew about it, and still hasn't fixed it. We're not asking for anything extraordinary. We just want the roof we're paying rent for.</p>
+            
+            <div class="prekeys-callout">
+                <h4>🔑 They Knew Before We Even Had Keys</h4>
+                <p style="margin:0;">We reported the first leak on <strong>April 8, 2025</strong>—during buildout, before we took possession. The landlord acknowledged it. The roofer was dispatched. It was not fixed. They handed us the keys anyway. They've known about this problem from Day Zero and didn't care enough to fix it before renting us the space.</p>
+            </div>
+            
+            <div class="key-facts">
+                <div class="fact-box"><span class="fact-number">252+</span><span class="fact-label">Days Unresolved</span></div>
+                <div class="fact-box"><span class="fact-number">4</span><span class="fact-label">Active Leaks</span></div>
+                <div class="fact-box"><span class="fact-number">0</span><span class="fact-label">Permanent Fixes</span></div>
+                <div class="fact-box"><span class="fact-number">2+</span><span class="fact-label">Years for Neighbor</span></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <section id="ask">
+                <div class="simple-ask">
+                    <h2>What We're Asking For</h2>
+                    <p><strong>A roof that doesn't leak.</strong></p>
+                    <p style="margin-top:16px; font-size:0.95rem; color:var(--text-secondary);">That's it. We're not asking for free rent. We're not asking for damages. We're not trying to get out of our lease. We're asking for what Section 8(a) of our lease promises: the landlord maintains the roof. After eight months, they haven't. We just want what we're paying for.</p>
+                </div>
+            </section>
+            
+            <section id="story">
+                <h2>Who We Are</h2>
+                <div class="family-story">
+                    <h3>We're ORB Trading Cards & Collectibles</h3>
+                    <p>We're a small team—Mike, Brandon, and Brandon's spouse—who opened a trading card shop in Oregon City in 2025. We host Magic: The Gathering tournaments every week, build community for collectors and gamers, and work hard to create a welcoming space for everyone who walks through our door.</p>
+                    <p>Our inventory is cardboard. Tens of thousands of dollars of trading cards that water destroys instantly. When we signed our lease, we trusted that a commercial landlord would maintain the building. We didn't expect perfection—we expected basic maintenance. We expected a roof that works.</p>
+                    <p><strong>We reported a leak before we even had the keys.</strong> The landlord knew. They handed us the keys anyway. That tells you everything about how much they care about this property and the people renting it.</p>
+                </div>
+                
+                <h3>The Parties Involved</h3>
+                <table class="parties-table">
+                    <tr><th>Role</th><th>Entity/Person</th><th>Location</th></tr>
+                    <tr><td>Property Owner</td><td><strong>Oregon Ctr. LLC</strong><br><small>Managed by Investment Concepts, Inc.</small></td><td>Orange, CA</td></tr>
+                    <tr><td>Management Company</td><td><strong>Investment Concepts, Inc.</strong><br><small>Jeffrey Frye (CEO/CFO), Kim Watson (COO)</small></td><td>1667 E. Lincoln Ave.<br>Orange, CA 92865</td></tr>
+                    <tr><td>Roofing Contractor</td><td><strong>Leak Seal Roofing</strong><br><small>Raymond Deal (President)</small></td><td>Vancouver, WA</td></tr>
+                    <tr class="highlight-row"><td>Affected Tenant</td><td><strong>ORB Trading Cards & Collectibles</strong><br><small>Small business, 3-person team</small></td><td>Suite 127<br>Oregon City, OR</td></tr>
+                    <tr class="highlight-row"><td>Also Affected</td><td><strong>Thai Restaurant (Adjacent)</strong><br><small>Same roof, same problem, 2+ YEARS</small></td><td>Oregon Center<br>Oregon City, OR</td></tr>
+                </table>
+                
+                <div class="neighbor-box">
+                    <h4>🚨 We're Not Alone: Our Neighbor Has Had Leaks for TWO YEARS</h4>
+                    <p>On December 15, 2025, we talked to the Thai restaurant next door. Same roof. Same landlord. They told us:</p>
+                    <ul>
+                        <li>They've had roof leaks <strong>with no permanent fix for over 2 years</strong></li>
+                        <li>They have <strong>multiple active leaks right now</strong></li>
+                        <li>They stopped reporting because <strong>"English is not their first language and their problems don't get resolved when they do try to reach out"</strong></li>
+                    </ul>
+                    <p><strong>This building has had a leaking roof for years. ICI knows. They collect rent anyway. They just don't care.</strong></p>
+                </div>
+            </section>
+            
+            <section id="gaslighting">
+                <h2>How They've Treated Us</h2>
+                <p>We've spent eight months being professional, patient, and thorough. We've documented everything. We've answered every question. We've been available for every repair attempt. Here's how we've been treated in return:</p>
+                
+                <div class="damning-quote">
+                    <blockquote>"My roofers went out there. There was no signs of wetness. The tile was completely dry. <strong>It might've been an old stain??</strong>"</blockquote>
+                    <div class="attribution">— Ray Deal, Leak Seal Roofing, May 16, 2025</div>
+                    <div class="context">🔥 <strong>The next morning: TWO NEW LEAKS appeared.</strong> Those tiles were brand new—we had just replaced them days earlier. It wasn't an old stain. It was a roof that doesn't work.</div>
+                </div>
+                
+                <div class="damning-quote">
+                    <blockquote>"<strong>It helps if you answer the questions.</strong>"</blockquote>
+                    <div class="attribution">— Ray Deal, Leak Seal Roofing, May 17, 2025</div>
+                    <div class="context">This was said after we had reported leaks multiple times, sent photos, and answered every question asked. We were doing everything right. We were still being talked down to.</div>
+                </div>
+                
+                <div class="damning-quote">
+                    <blockquote>"[We] offered to install leak diverters in the drop ceiling to catch any leaks, <strong>but they were declined.</strong>"</blockquote>
+                    <div class="attribution">— Hubert Kim, ICI Property Manager, August 8, 2025</div>
+                    <div class="context">🔥 <strong>This was false.</strong> Brandon responded: "What do you mean by 'offered to install leak diverters... but they were declined.' <strong>Because they were absolutely not declined by us.</strong>" We offered to pull our security video with audio to prove what was actually said. They stopped making that claim.</div>
+                </div>
+                
+                <div class="damning-quote">
+                    <blockquote>"The roof cannot be repaired until after the rainy season."</blockquote>
+                    <div class="attribution">— ICI Management, December 2025 (via phone)</div>
+                    <div class="context">We first reported leaks in <strong>April 2025</strong>. They had April, May, June, July, August, September, October—the entire dry season—to fix this. They didn't. Now it's December, our peak retail season, and we're told to wait until spring. With four active leaks. While paying rent for a space we can't fully use.</div>
+                </div>
+                
+                <h3>We Told Them This Would Happen</h3>
+                <div class="damning-quote">
+                    <blockquote>"I am worried that we are going to get a patch here and there then <strong>when the rainy season hits in the fall we're going to have a continual loop of leaks</strong> like we've had so far."</blockquote>
+                    <div class="attribution">— Mike Alarcon (ORB), May 16, 2025</div>
+                    <div class="context">Written in May. It's now December. We have four leaks. We predicted exactly what would happen. Nobody listened.</div>
+                </div>
+            </section>
+            
+            <section id="timeline">
+                <h2>Complete Timeline</h2>
+                <p>Every incident documented via email. Blue = before we had keys. Red = major incidents. Yellow = gaslighting.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item prekeys">
+                        <div class="timeline-date">April 8, 2025 — BEFORE KEYS</div>
+                        <div class="timeline-title">First Leak Reported</div>
+                        <div class="timeline-content">Wet spot discovered on new ceiling during buildout. <em>We did not have possession yet.</em> The landlord knew before we were even tenants.</div>
+                    </div>
+                    
+                    <div class="timeline-item prekeys">
+                        <div class="timeline-date">April 10-11, 2025 — BEFORE KEYS</div>
+                        <div class="timeline-title">Second Leak, Getting Worse</div>
+                        <div class="timeline-content">Second active leak. Property manager confirms "urgent" follow-up to roofer. <em>Still before we had keys. Still not fixed.</em></div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 1-7, 2025</div>
+                        <div class="timeline-title">We Take Possession — With Known Leak</div>
+                        <div class="timeline-content">We accept keys to a space with a documented, unresolved roof leak. We trusted it would be fixed. It wasn't.</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">May 16, 2025</div>
+                        <div class="timeline-title">Leak Above Expensive Product</div>
+                        <div class="timeline-content">"It's on the sales floor, right about very expensive cardboard products." Ray Deal: <em>"It might've been an old stain??"</em></div>
+                    </div>
+                    
+                    <div class="timeline-item gaslight">
+                        <div class="timeline-date">May 17, 2025</div>
+                        <div class="timeline-title">TWO NEW LEAKS</div>
+                        <div class="timeline-content">"Two new leaks this morning." Ray: <em>"It helps if you answer the questions."</em> We had answered everything.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 19-20, 2025</div>
+                        <div class="timeline-title">Begging for Response, Then Repairs</div>
+                        <div class="timeline-content">"Can we please get a response on this?? Water is getting very close to dripping through onto our expensive product."</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">June 20, 2025</div>
+                        <div class="timeline-title">"Sadly the leak is back"</div>
+                        <div class="timeline-content">One month after "repairs." The fix didn't hold.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 24, 2025</div>
+                        <div class="timeline-title">Asking for Basic Communication</div>
+                        <div class="timeline-content">"Even just some form of communication letting us know the right person saw it..."</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">July 21, 2025</div>
+                        <div class="timeline-title">Leak Returns — Again</div>
+                        <div class="timeline-content">"First rain in a little bit and the leak is back."</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">August 6, 2025</div>
+                        <div class="timeline-title">EMERGENCY: Water on Merchandise</div>
+                        <div class="timeline-content">"EMEGENCY ROOF LEAK FLOODING PRODUCT" — Water actively dripping onto inventory.</div>
+                    </div>
+                    
+                    <div class="timeline-item gaslight">
+                        <div class="timeline-date">August 8, 2025</div>
+                        <div class="timeline-title">Property Manager's False Claim</div>
+                        <div class="timeline-content">Hubert Kim claims we "declined" leak diverters. Brandon: <em>"Because they were absolutely not declined by us."</em></div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">September 12, 2025</div>
+                        <div class="timeline-title">Rent Concession Letter</div>
+                        <div class="timeline-content">ICI's written acknowledgment the problem exists and affects our space.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">October 13, 2025</div>
+                        <div class="timeline-title">Brief Hope</div>
+                        <div class="timeline-content">"I am very happy to report no leaks!"</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">October 17, 2025</div>
+                        <div class="timeline-title">Four Days Later: Leaking Again</div>
+                        <div class="timeline-content">"I'm sorry to be the bearer of bad news, the water is leaking again."</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">November-December 2025</div>
+                        <div class="timeline-title">Peak Season — Four Active Leaks</div>
+                        <div class="timeline-content">Christmas season. Multiple leaks. Buckets on the sales floor.</div>
+                    </div>
+                    
+                    <div class="timeline-item major">
+                        <div class="timeline-date">December 15, 2025</div>
+                        <div class="timeline-title">Formal Demand + Neighbor Confirms 2+ Years</div>
+                        <div class="timeline-content">Legal demand sent. Thai restaurant confirms same problem for over 2 years.</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="evidence">
+                <h2>Evidence</h2>
+                <p>We have documented everything:</p>
+                <ul style="margin-left: 24px; margin-bottom: 24px;">
+                    <li><strong>100+ emails</strong> spanning April–December 2025</li>
+                    <li><strong>Photographs</strong> of every incident</li>
+                    <li><strong>Video</strong> of active leaks</li>
+                    <li><strong>Security camera footage</strong></li>
+                    <li><strong>Landlord's rent concession letter</strong> — written admission</li>
+                    <li><strong>Neighbor testimony</strong> — 2+ years of the same</li>
+                </ul>
+                <p>All available to media, attorneys, and agencies upon request.</p>
+            </section>
+            
+            <section id="violations">
+                <h2>What Our Lease Says</h2>
+                <div class="lease-excerpt">
+                    <div class="lease-section">Section 8(a)(ii)</div>
+                    <div class="lease-text">"Repair and maintenance of exterior walls, <strong>roof</strong>, gutters, downspouts, foundation"</div>
+                    <div class="lease-analysis">The roof is their responsibility. Period.</div>
+                </div>
+                <div class="lease-excerpt">
+                    <div class="lease-section">Section 8(d)</div>
+                    <div class="lease-text">"Landlord shall have no liability... unless... Landlord <strong>fails to commence efforts to remedy the problem in a reasonable time and manner</strong>"</div>
+                    <div class="lease-analysis">Eight months—starting before we had keys—is not reasonable.</div>
+                </div>
+            </section>
+            
+            <section id="demands">
+                <h2>What We're Asking For</h2>
+                <p>Response due <strong>December 30, 2025</strong>.</p>
+                <ol class="demands-list">
+                    <li><strong>A specific repair timeline</strong> — actual dates</li>
+                    <li><strong>Written scope of work</strong> — what will be done</li>
+                    <li><strong>Documentation of previous attempts</strong> — what failed</li>
+                    <li><strong>Rent abatement</strong> — per our lease</li>
+                    <li><strong>Interim protection plan</strong> — until repair is complete</li>
+                </ol>
+                <p style="margin-top: 24px;"><strong>We're not asking for anything unreasonable. We're asking for what we signed up for: a roof that works.</strong></p>
+            </section>
+            
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-box">
+                    <h3>Are You Also Affected?</h3>
+                    <p>If you're at Oregon Center or another ICI property with similar issues, please reach out.</p>
+                    <a href="mailto:mike@orbsportscards.com" class="contact-email">mike@orbsportscards.com</a>
+                </div>
+                <div class="contact-box" style="margin-top: 16px;">
+                    <h3>Media Inquiries</h3>
+                    <p>Full documentation available. A small business that just wants a dry ceiling vs. a corporate landlord 1,400 miles away.</p>
+                    <a href="mailto:mike@orbsportscards.com?subject=Media%20Inquiry%20-%20FixTheRoofICI" class="contact-email">Media Contact</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p><strong>ORB Trading Cards & Collectibles</strong> — Oregon City, Oregon</p>
+            <p>fixtheroofici.replit.app — #FixTheRoofICI</p>
+            <p>Last updated: December 16, 2025</p>
+            <p class="disclaimer">All statements factual and documented. Nothing herein constitutes legal advice.</p>
+        </div>
+    </footer>
+    <script>function toggleTheme(){const h=document.documentElement,c=h.getAttribute('data-theme'),n=c==='dark'?'light':'dark';h.setAttribute('data-theme',n);document.querySelector('.theme-label').textContent=n==='dark'?'Light':'Dark';}</script>
+</body>
+</html>
