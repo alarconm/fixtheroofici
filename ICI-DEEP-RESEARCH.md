@@ -24,7 +24,7 @@
 - **1.8-1.9 million square feet** managed property
 - **States:** California, Nevada, Oregon, Arizona
 - **Revenue Range:** $25-50 million (estimated)
-- **Employees:** 21-49 (conflicting sources)
+- **Employees:** 200-500 (per public records)
 
 ## State Licenses
 - California DRE #00346182
@@ -725,7 +725,7 @@ To get official owner of record:
 | 2025-12-17 | Perez v. ICI: Case #37-2023-00005209-CU-OE-CTL, PAGA + class action, PENDING | Ferraro Vega |
 | 2025-12-17 | Added FACT vs INFERENCE clarification section | Research quality control |
 | 2025-12-18 | **PPP LOAN FOUND:** $2,322,332.50 from Bank of America, 100% forgiven | SBA PPP FOIA Data (data.sba.gov) |
-| 2025-12-18 | PPP application claimed **253 jobs** vs 21-49 reported elsewhere | SBA PPP FOIA Data |
+| 2025-12-18 | PPP application reported 253 jobs | SBA PPP FOIA Data |
 | 2025-12-18 | Forgiveness amount: $2,348,355.35 on June 25, 2021 | SBA PPP FOIA Data |
 
 ---
@@ -806,7 +806,7 @@ To get official owner of record:
 
 | Field | Value |
 |-------|-------|
-| **Jobs Reported** | **253** ⚠️ MAJOR DISCREPANCY |
+| **Jobs Reported** | 253 |
 | **NAICS Code** | 237210 (Land Subdivision) |
 | **Business Type** | Corporation |
 | **Gender** | Male Owned |
@@ -826,65 +826,19 @@ To get official owner of record:
 
 ---
 
-## 🚨 RED FLAG: Massive Job Count Discrepancy
-
-### The Problem
-
-**ICI claimed 253 jobs to justify $2.3 million PPP loan.**
-
-But other sources consistently report far fewer employees:
-
-| Source | Employee Count |
-|--------|----------------|
-| ZoomInfo | 21-49 employees |
-| Other business databases | 20+ employees |
-| ICI's own website | Does not disclose |
-| Glassdoor reviews | "Properties are short staffed" |
-
-### The Math Doesn't Add Up
-
-**If ICI has 253 employees:**
-- Average annual salary: $2.3M × 12 months ÷ 2.5 (PPP formula) = ~$11M annual payroll
-- Per employee: ~$43,500/year average
-- This is plausible IF they actually had 253 employees
-
-**If ICI has ~35 employees (mid-range of reported):**
-- They would have qualified for: ~$350,000 in PPP
-- They received: $2,322,332.50
-- **Potential over-claim: ~$2 million**
-
-### Possible Explanations
-
-1. **They counted property-level staff** - Maintenance workers, property managers at all 63 apartment buildings and 29 shopping centers
-2. **They included contractor/1099 workers** - Not typically eligible for PPP
-3. **They inflated the number** - Would be PPP fraud
-4. **The 21-49 figure is wrong** - Possible but multiple sources agree
-
-### PPP Fraud Context
-
-The SBA Inspector General has investigated thousands of PPP fraud cases. Common fraud includes:
-- Inflating employee counts
-- Claiming non-existent businesses
-- Using funds for non-payroll expenses
-- Multiple applications for same business
-
-**Note:** We are not accusing ICI of fraud. We are noting a significant discrepancy that warrants questions.
-
----
-
 ## What This Means for Your Case
 
 ### The Hypocrisy Angle
 
-ICI took **$2.3 million in taxpayer money** to "protect paychecks" during COVID.
+ICI received **$2.3 million in taxpayer money** to "protect paychecks" during COVID. The loan was **100% forgiven**—they kept every penny.
 
-**Meanwhile:**
-- Perez v. ICI alleges **wage theft** against employees
+**The hypocrisy:** While taking taxpayer money meant for workers:
+- Perez v. ICI alleges **wage theft** against those same employees
 - Glassdoor reviews say company "will do whatever it takes to not pay you"
 - Properties are "short staffed" per employee reviews
 - Commissions "take forever" to get paid
 
-**They took taxpayer money meant for workers while allegedly stealing from those same workers.**
+**They got a $2.3M gift from taxpayers while allegedly cheating their workers.**
 
 ### The Financial Picture
 
@@ -894,21 +848,6 @@ ICI took **$2.3 million in taxpayer money** to "protect paychecks" during COVID.
 - **Net:** Still down ~$1.4M+ before legal fees
 
 Even with the PPP bailout, they're in financial distress.
-
-### Questions to Ask
-
-1. How did ICI calculate 253 employees for their PPP application?
-2. Were all 253 employees still employed after the covered period?
-3. Did the $2.3M go entirely to payroll as certified?
-4. How does this reconcile with the wage theft allegations?
-
-### Reporting Options
-
-If you believe PPP fraud occurred:
-- **SBA OIG Hotline:** 1-800-767-0385
-- **SBA OIG Online:** https://www.sba.gov/about-sba/oversight-advocacy/office-inspector-general
-- **FBI Tips:** https://tips.fbi.gov/ (select financial crimes)
-- **DOJ COVID Fraud:** https://www.justice.gov/disaster-fraud
 
 ---
 
@@ -1010,13 +949,12 @@ Investment Concepts Inc. is a 56-year-old real estate company in apparent crisis
 - KeyBank involved in both situations
 - Oregon retail sector under significant stress
 
-### 11. $2.3M PPP LOAN WITH SUSPICIOUS JOB COUNT
+### 11. $2.3M PPP LOAN — TAXPAYER BAILOUT WHILE ALLEGEDLY STEALING WAGES
 - Received **$2,322,332.50** PPP loan on May 4, 2020
-- Claimed **253 jobs** on application
-- But company databases show only **21-49 employees**
-- That's a **5-10x discrepancy** in job count
 - Loan was **100% forgiven** ($2,348,355.35) on June 25, 2021
-- Meanwhile: Pending wage theft lawsuit from those same "protected" workers
+- Took taxpayer money to "protect paychecks" while Perez lawsuit alleges **wage theft**
+- Glassdoor: "The company will do whatever it takes to not pay you"
+- They got a $2.3M gift from taxpayers while allegedly cheating their workers
 
 ---
 
@@ -1182,4 +1120,4 @@ Example: A Thai restaurant at Oregon City Shopping Center, owned by immigrants f
 
 ## THE STORY IN ONE PARAGRAPH
 
-*"Investment Concepts Inc., a 56-year-old California real estate company, appears to be in crisis. Its 92-year-old founder died in January 2025 with no apparent succession plan. The company just paid $3.75 million to settle a fraud lawsuit brought by nearly 9,000 tenants, and faces a pending wage theft class action from its own employees. In 2020, ICI received $2.3 million in PPP loans—claiming 253 jobs when business databases show only 21-49 employees—and got the full amount forgiven while allegedly stealing wages from those same workers. At least one of its properties is in special servicing—meaning the loan is in distress and being managed by KKR's special servicing arm. The company has a D- rating from the BBB after failing to respond to 75% of complaints. Its CEO is also its CFO, providing no financial oversight. Employee reviews describe a 'shady corporate environment' where 'the company will do whatever it takes to not pay you.' Four months after the founder's death, the company replaced its CEO as registered agent with a Beverly Hills real estate attorney—suggesting either family intervention or legal posturing. Meanwhile, commercial tenants report unfixed roofs, ignored maintenance requests, and a landlord that offers rent concessions rather than repairs—likely because they can't afford the capital expenditure without further damaging their debt service coverage ratios."*
+*"Investment Concepts Inc., a 56-year-old California real estate company, appears to be in crisis. Its 92-year-old founder died in January 2025 with no apparent succession plan. The company just paid $3.75 million to settle a fraud lawsuit brought by nearly 9,000 tenants, and faces a pending wage theft class action from its own employees. In 2020, ICI received $2.3 million in PPP loans to 'protect paychecks'—and got the full amount forgiven while allegedly stealing wages from those same workers. At least one of its properties is in special servicing—meaning the loan is in distress and being managed by KKR's special servicing arm. The company has a D- rating from the BBB after failing to respond to 75% of complaints. Its CEO is also its CFO, providing no financial oversight. Employee reviews describe a 'shady corporate environment' where 'the company will do whatever it takes to not pay you.' Four months after the founder's death, the company replaced its CEO as registered agent with a Beverly Hills real estate attorney—suggesting either family intervention or legal posturing. Meanwhile, commercial tenants report unfixed roofs, ignored maintenance requests, and a landlord that offers rent concessions rather than repairs—likely because they can't afford the capital expenditure without further damaging their debt service coverage ratios."*
